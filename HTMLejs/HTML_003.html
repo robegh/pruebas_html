@@ -1,0 +1,882 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">	<!--Codificación de caracteres de la página en Formato de Transformación Unicode de 8 bits-->
+	<meta name="author" content="Hulio Bético">
+	<meta name="description" content="Ejemplo para Aplicaciones Web sobre más etiquetas HTML">
+	<meta name="keywords" content="html, favicon, web">
+	<!--Icono (favicon: favorite icon) para pestaña navegador y marcadores. Con extensión .ico (originalmente), .png, .jpg, .gif, o también .svg-->
+	<!--Tamaño habitual del favicon (píxeles): 16x16, 32x32, 48x48, 64x64, 128x128-->
+	<link rel="shortcut icon" href="faviconpelota.png" type="image/x-icon">
+	<!--Para dar un estilo al documento. Puede especificarse aquí o en un archivo CSS-->
+	<!--Con borde transparente deja de verde el color plateado-->
+	<style>
+		h1 {color:green;}
+		h2 {color:purple;}
+		h3 {color:orange;}
+		h4 {color:grey;}
+		h5 {border: solid 2px brown; background-color: darkblue; color: yellow;}
+		h6 {border: transparente 4px silver; background-color: #253545; color: white;}
+		p {color:pink;}
+		a {border: solid 2px blue; color: red;}
+		figure {border: 1px #cccccc solid; padding: 4px; margin: auto; width: 30%;}
+		figcaption {background-color: black; color: white; font-style: italic; padding: 2px; text-align: center;}
+	</style>
+    <title>Ejemplo 3: más HTML</title>
+  </head>
+  <body>
+  	<hr/> <!--Añade una línea o regla horizontal-->
+    <h1>Primeros pasos en HTML:</h1>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<!--Esto es un comentario y no aparecerá en la página HTML-->
+	<h2>Párrafos, saltos de línea e inserción de caracteres especiales:</h2>
+    <p>Esto es un párrafo hecho con el elemento HTML &apos;&lt;p&gt;&apos;</p>
+    <!--Si pongo varios espacios y/o tabuladores seguidos, el navegador me lo interpreta como un único espacio-->
+    Esto es un párrafo hecho     	 manualmente con saltos de línea a partir del elemento HTML &quot; &lt; br &gt; &quot;
+    <br>
+	<dfn id="himno-betis">HIMNO DEL BETIS</dfn>
+	<br>
+    Hay una leyenda
+    
+	<br>
+				<br/>
+	
+				    
+    que recorre 
+    	el mundo entero		<!--Si no se introduce un elemento de salto de línea o párrafo, se interpreta como un espacio en blanco-->
+    <p>(párrafo aquí en medio creado con el elemento HTML &apos; &lt; p &gt; &apos;) </p>
+    <!--Aquí escribo la codificación del carácter espacio en blanco para escribirlo tres veces-->
+    verde &amp; blanco...&nbsp;&nbsp;&nbsp;sus colores...
+    <br>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h2>Inserción de imágenes:</h2>
+    Viva el Betis
+    <img src="HTML_002_Betis.png" width="200" height="350">
+    Más Betis
+    <img src="HTML_002_Betis.png" width="" height=""/>           <!--Imagen sin escalar-->
+    Musho Betiii
+    <img src="HTML_002_Betis.png" width="30" height="20">
+    <img src="HTML_002_Betis.png" width="600" height="400">
+    <br>
+    <br>
+	Imagen inexistente muestra texto alternativo:
+	<img src="HTML_002_ImagenInexistente.png" width="600" height="400" alt="No se encuentra la imagen">
+    <br>
+	<br>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h2>Inserción de enlaces o hipervínculos:</h2>
+	<!--Forzar apertura de enlace en una nueva pestaña gracias al atributo target con valor _blank-->
+	<!--Dar información adicional del enlace con el atributo title. Se nos muestra al posicionar el cursor del ratón sobre el enlace-->
+    <a href="https://www.realbetisbalompie.es/" title="Web Oficial del Betis" target="_blank">
+    Enlace a la página web oficial del Real Betis Balompié (apertura en nueva pestaña e información adicional al posicionar el cursor sobre este enlace)
+    </a>
+	<br><br>
+	Enlace con a la página oficial del Real Betis Balompié (pinchando sobre la imagen)
+	<br>
+	<a href="https://www.realbetisbalompie.es/"><img src="HTML_002_BetisEscudoAntiguo.png" width="40" height="40"></a>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h1>Elementos del cuerpo (body) de la página:</h1>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h2>- Elementos de bloque:</h2>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Párrafo:</h3>
+	<p>Esto es un párrafo</p>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Títulos (seis niveles):
+	<h1>Bloque de títulos de primer nivel</h1>
+	<h2>Bloque de títulos de segundo nivel</h2>
+	<h3>Bloque de títulos de tercer nivel</h3>
+	<h4>Bloque de títulos de cuarto nivel</h4>
+	<h5>Bloque de títulos de quinto nivel</h5>
+	<h6>Bloque de títulos de sexto nivel</h6>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Listas (tipos):</h3>
+	<h4>Lista ordenada (ol; usa li para los elementos)</h4>
+	<ol>
+		<li>Elemento Ordenado 1</li>
+		<li>Elemento Ordenado 2</li>
+	</ol>
+	<h4>Lista no ordenada (ul; usa li para los elementos)</h4>
+	<ul>
+		<li>Elemento 1</li>
+	<ul><li>Subelemento 1.1</li>
+		<li>Subelemento 1.2</li> </ul>
+	<li>Elemento 2</li>
+	</ul>
+	<h4>Lista de definiciones (dl; usa dt y dd para términos/conceptos y definiciones)</h4>
+	<dl>
+		<dt>Término/Concepto 1</dt>
+		<dd>Definición 1</dd>
+		<dt>Término/Concepto 2</dt>
+		<dd>Definición 2</dd>
+	</dl>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Elemento de bloque div:</h3>
+	<div style="background-color: black; color: white; padding: 30px;">
+		<h2>London</h2>
+		<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+		<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+		This is London!!!
+	</div>
+	<br>
+	
+	<div align="left"><p>Este texto se encuentra alineado a la izquierda... Este texto se encuentra alineado a la izquierda... Este texto se encuentra alineado a la izquierda... Este texto se encuentra alineado a la izquierda... Este texto se encuentra alineado a la izquierda...Este texto se encuentra alineado a la izquierda... Este texto se encuentra alineado a la izquierda... Este texto se encuentra alineado a la izquierda... Este texto se encuentra alineado a la izquierda...</p></div>
+	<div align="center"><p>Este texto se encuentra centrado...</p></div>
+	<div align="right"><p>Este texto se encuentra alineado a la derecha...</p></div>
+	<div align="justify"><p>Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado. Este texto se encuentra justificado.</p></div>
+
+	<div style="background-color: #007700; color: gold; padding: 10px;">
+		<ins><strong>NOTA:</strong></ins>
+		<br>- El <strong>elemento center</strong> y los <strong>atributos align, bgcolor, border y color</strong> se han vuelto <strong>obsoletos en HTML5</strong> y <strong>se desaconseja su uso</strong>, debería emplearse <strong>en su lugar style y hojas de estilo CSS</strong>.
+		<br>- El <strong>elemento de bloque div</strong> se suele usar <strong>para las CSS con atributos como class, id o style</strong> (para <strong>claridad semántica</strong> y para <strong>definir la estructura de una página web</strong>, la cual <strong>puede hacerse también con las etiquetas header, nav, main, section, article, aside y footer</strong>), <strong>o</strong> bien se puede usar <strong>para ser tratada</strong> la división, sección o contenedor de elementos HTML que se ha creado con div <strong>mediante el lenguaje JavaScript</strong>.
+	</div>
+	<br>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Elemento de bloque de línea o regla horizontal hr:</h3>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	(se ha añadido una línea horizontal)
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h2>- Elementos en línea:</h2>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Elemento en línea span:</h3>
+	<div><p>Hello
+	<span style="color: red;">I am Red!</span>
+	And you?
+	</div>
+	<div>Este <span style="color: red; background-color: #FFFF00;">span</span> es un elemento en línea; este fondo se ha coloreado para mostrar el principio y fin de la influencia del elemento en línea.
+	</div>
+	<br>Se suele usar para las CSS con atributos como class o style, y para claridad semántica.
+	<br><br>
+	</p>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Elemento en línea a (para añadir enlaces):</h3>
+	<a href="https://www.realbetisbalompie.es/" title="Web Oficial del Betis" target="_blank">
+    Enlace a la página web oficial del Real Betis Balompié (apertura en nueva pestaña e información adicional al posicionar el cursor sobre este enlace)
+    </a>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Abreviatura abbr:</h3>
+	El <abbr title="Señor">Sr.</abbr> Manuel Ruiz de Lopera fue presidente del Betis de 1992 a 2006.
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Definición en línea con dfn:</h3>
+	Pero entonces, ¿cómo empieza el <a href="#himno-betis">himno del Betis</a>? ¿Lo recuerdas?
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Cursiva con em:</h3>
+	La siguiente palabra va en <em>cursiva</em> para darle enfásis.
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Negrita con strong:</h3>
+	La siguiente palabra va en <strong>negrita</strong> para darle enfásis.
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Cita de obras con cite:</h3>
+	Juan Ramón Jiménez escribió <cite>Platero y yo</cite>, una obra de culto infantil.
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3> Cita de partes de una obra con q (para líneas cortas de texto; se añaden las comillas automáticamente):</h3>
+	<p>Porque, como bien dijo Frodo, <q cite="https://www.casadellibro.com/libro-la-comunidad-del-anillo-trilogia-el-senor-de-los-anillos-1/9788445000663/2010571/">Yo llevaré el Anillo. Aunque no sé cómo</q>.</p>
+
+	<p>La autora del libro asegura que <q>no es autobiográfico</q> aunque tiene similitudes son su vida.</p>
+	<h3>Cita de partes de una obra con blockquote (permite incluir otros elementos como imágenes, tablas o artículos, q solamente permite citar líneas de texto; blockquote es usado también para encerrar citas en un foro):</h3>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<p>Voy a citaros una parte de una obra, a ver si os suena...</p>
+	<blockquote cite="http://www.cervantesvirtual.com/obra-visor/el-ingenioso-hidalgo-don-quijote-de-la-mancha-6/html/">
+	<p>En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de Quijada, o Quesada, que en esto hay alguna diferencia en los autores que deste caso escriben; aunque por conjeturas verosímiles se deja entender que se llamaba Quijana. Pero esto importa poco a nuestro cuento: basta que en la narración dél no se salga un punto de la verdad.</p>
+	</blockquote>
+	<p>— Miguel de Cervantes Saavedra</p>	<!--El autor debe ir fuera de la cita-->
+	
+	<p>Cita de un foro:</p>
+	<p>Juan escribió...</p>
+	<blockquote><p>Estoy a tope de gama.</p></blockquote>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Texto eliminado/tachado con del:</h3>
+	La siguiente palabra está <del>tachada</del>.
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Texto insertado/subrayado con ins:</h3>
+	La siguiente palabra está <ins>subrayada</ins>.
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Texto en subíndice con sub:</h3>
+	La siguiente palabra está en <sub>subíndice</sub>.
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Texto en superíndice con sup:</h3>
+	La siguiente palabra está en <sup>superíndice</sup>.
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h3>Imágenes con img:</h3>
+	<div align="center">
+		<img src="HTML_002_Betis.png" width="150" height="100" title="Betis" alt="No se encuentra la imagen">
+	</div>
+	<br><br>
+	<img src="HTML_002_ImagenInexistente.png" width="30" height="20" title="Betis" alt="No se encuentra la imagen">
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h3>Tablas con table:</h3>
+
+	<h4>Ejemplo de tabla con colores de fondo y letras:</h4>
+	<h5>Gasto de papel higiénico en un piso de estudiantes durante el confinamiento. Marzo de 2020:</h5>	
+	<!--Si no le pongo ancho por defecto, se me ajusta al contenido de las celdas-->
+	<table border="4" style="width:50%;">
+		<tr  style="color: darkred; background-color: #FFFF00;"> <th>Estudiante</th> <th>Gasto (en %)</th> </tr>
+		<tr> <td style="color: red;">Jon Vareta</td> <td style="background-color: orange;">51%</td> </tr>
+		<tr> <td>Armando Fonseca</td> <td>31%</td> </tr>
+		<tr> <td>Avelino Pérez</td> <td>18%</td> </tr>
+	</table>
+	
+	<br><br>
+	
+	<table style="width:50%; border: 3px solid green">
+		<tr  style="color: darkred; background-color: #FFFF00;"> <th>Estudiante</th> <th>Gasto (en %)</th> </tr>
+		<tr> <td style="color: red;">Jon Vareta</td> <td style="background-color: orange;">51%</td> </tr>
+		<tr> <td>Armando Fonseca</td> <td>31%</td> </tr>
+		<tr> <td>Avelino Pérez</td> <td>18%</td> </tr>
+	</table>
+
+	<h4>Ejemplo de tabla alineada a la derecha y párrafo justificado con sangrado en la primera línea:</h4>
+	<h5>Ahorro en los dos primeros meses del año:</h5>
+	<!--Si no le pongo ancho por defecto, se me ajusta al contenido de las celdas-->
+	<!--Atributo frame=void para no mostrar ningún borde externo de la tabla-->
+	<table frame="void" border="1" style="float:right; width:200px; padding: 5px;">
+		<tr>
+			<th>Mes</th>
+			<th>Ahorro</th>
+		</tr>
+		<tr>
+			<td>Enero</td>
+			<td>100 €</td>
+		</tr>
+		<tr>
+			<td>Febrero</td>
+			<td>70 €</td>
+		</tr>
+	</table>
+	<!--Párrafo justificado con sangrado en la primera línea-->
+	<p style="text-align:justify; text-indent: 30px;">Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla. Este es un texto de ejemplo que se ubica al lado de la tabla.</p>
+	
+	<h4>Ejemplo de celdas que abarcan dos columnas (colspan) y dos filas (rowspan):</h4>
+
+	<h5>Celda que abarca dos columnas (tabla con color de fondo):</h5>
+	<table border="1" style="background-color:#00CC00">
+		<tr>
+			<th>Nombre</th>
+			<th>Correo</th>
+			<th colspan="2">Teléfono</th>    
+		</tr>
+		<tr>
+			<td>Armando Castillo</td>
+			<td>armando.castillo@gmail.com</td>    
+			<td>610620630</td>
+			<td>959410410</td>    
+		</tr>
+	</table>
+
+	<h5>Celda que abarca dos filas (dos ejemplos: una tabla con doble borde alineada a la izquierda y otra con colapso de bordes):</h5>
+	<table border="1" style="float:left">
+		<tr>
+			<th>Nombre</th>
+			<td>Elsa Capuntas</td>
+		</tr>
+		<tr>
+			<th>Correo</th>
+			<td>elsa.capuntas@gmail.com</td>      
+		</tr>  
+		<tr>
+			<th rowspan="2">Teléfono</th>
+			<td>632632632</td>
+		</tr>
+		<tr>
+			<td>919919919</td>
+		</tr>
+	</table>
+
+	<table border="1" style="border-collapse: collapse">
+		<tr>
+			<th>Nombre</th>
+			<td>Elsa Capuntas</td>
+		</tr>
+		<tr>
+			<th>Correo</th>
+			<td>elsa.capuntas@gmail.com</td>      
+		</tr>  
+		<tr>
+			<th rowspan="2">Teléfono</th>
+			<td>632632632</td>
+		</tr>
+		<tr>
+			<td>919919919</td>
+		</tr>
+	</table><br>
+	
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Formularios con form:</h3>
+
+	<h4>Formulario con tres campos de entrada input tipo checkbox y uno tipo submit a modo de botón enviar:</h4>
+
+	<!--Métodos get y post: con post los datos no quedan visibles en el navegador, mientras que con get sí-->
+
+	<form action="ProcesamientoEnPHP.php" method="get">
+		<input type="checkbox" name="vehiculo1" value="Moto">
+		<label for="vehiculo1"> Tengo una moto</label><br>
+		<input type="checkbox" name="vehiculo2" value="Coche">
+		<label for="vehiculo2"> Tengo un coche</label><br>
+		<input type="checkbox" name="vehiculo3" value="Barco" checked>
+		<label for="vehiculo3"> Tengo un barco</label><br><br>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Borrar información">
+	</form>
+
+	<h4>Formulario con dos campos de entrada input tipo text y uno tipo submit a modo de botón enviar:</h4>
+
+	<!--Métodos get y post: con post los datos no quedan visibles en el navegador, mientras que con get sí-->
+	<!--Atributo for: especifica la identificación del elemento de formulario al que debe vincularse la etiqueta-->
+	<!--Atributo id: especifica una identificación única para un elemento-->
+	<!--Atributo name: especifica el nombre de un elemento input-->
+	<form action="ProcesamientoEnPHP.php" method="post">
+		<label for="nombrepersona">Nombre:</label>
+		<input type="text" id="nombrepersona" name="nombrepersona"><br><br>
+		<label for="apellpersona">Apellidos:</label>
+		<input type="text" id="apellpersona" name="apellpersona"><br><br>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Borrar información">
+	</form>
+
+	<h4>Formulario con campos de entrada input tipo text, password, radio, checkbox y submit:</h4>
+	<!--En este ejemplo mandamos los datos del formulario por correo-->
+	<!--En el lado del cliente o frontend, se podría usar validación de formularios incorporada (emplea-->
+	<!--características de validación de formularios de HTML5, no requiere mucho JavaScript y tiene mejor-->
+	<!--rendimiento; pero no es tan personalizable como la validación con JavaScript-->
+	<!--Si quisiéramos una mejor presentación del formulario o que se envíe	automáticamente el correo a un email-->
+	<!--sin que pase por ningún programa de email, tendríamos que procesar el formulario mediante un programa-->
+	<!--(bien puede ser por un programa prediseñado que nos ofrezca un servidor de alojamiento), o tratar el-->
+	<!--formulario con lenguajes como PHP o ASP, que son de lado del servidor o backend-->
+	<!--Métodos get y post: con post los datos no quedan visibles en el navegador, mientras que con get sí-->
+
+	<form action="mailto:profesorAWEB@gmail.com" method="post">	<!--Cambiar por vuestro propio mail para practicar-->
+		Nombre de usuario: <input type="text" name="nombreusu" placeholder="nombre o alias" /><br />
+		Contraseña: <input type="password" name="claveusu" /><br /><br/>
+		<fieldset>
+			<legend>Género</legend>
+			<input type="radio" name="genero" value="hombre" /> Hombre<br />
+			<input type="radio" name="genero" value="mujer" /> Mujer
+		</fieldset><br>
+		<fieldset>
+			<legend>Datos</legend>
+			<label for="cumpleusu">Cumpleaños:</label>
+			<input type="date" id="cumpleusu" name="cumpleusu"><br>
+			
+			<label for="colorfav">Color favorito:</label>
+			<input type="color" id="colorfav" name="colorfav" value="#00ff00"><br>
+			
+			<label for="conocimientoscplusplus">Conocimientos de C++:</label>
+			<meter id="conocimientoscplusplus" value="7" min="0" max="10">7 de 10</meter><br>
+			<label for="conocimientoscsharp">Conocimientos de C#: &nbsp;&nbsp; </label>
+			<meter id="conocimientoscsharp" value="0.3">30%</meter><br>
+			
+			<label for="cochefav">Elige el coche que más te guste:</label>
+			<select name="cochefav" id="cochefav">
+				<option value="mercedes">Mercedes</option>
+				<option value="audi">Audi</option>
+				<option value="opel">Opel</option>
+				<option value="seat">Seat</option>
+			</select><br>
+			
+			<label for="animales">Elige el animal que más te guste:</label>
+			<select name="animales" id="animales">
+				<optgroup label="Mamíferos">
+					<option value="leon">León</option>
+					<option value="lobo">Lobo</option>
+				</optgroup>
+				<optgroup label="Aves">
+					<option value="buitre">Buitre</option>
+					<option value="colibri">Colibrí</option>
+				</optgroup>
+			</select><br>
+			
+			<label for="otrosdatos">Otros datos de interés:</label><br>
+			<textarea id="otrosdatos" name="otrosdatos" rows="4" cols="100">Escribir aquí lo que proceda.</textarea>
+		</fieldset><br>
+		<fieldset>
+			<legend>Intereses</legend>
+			<input type="checkbox" name="interes" value="web" /> Videojuegos<br />
+			<input type="checkbox" name="interes" value="prg" /> Deporte<br />
+			<input type="checkbox" name="interes" value="lin" /> Informática<br />
+			<input type="checkbox" name="interes" value="mac" /> Cocina<br />
+			<input type="checkbox" name="interes" value="and" /> Bricolaje
+		</fieldset><br />
+		<button type="submit">Enviar</button>
+		<button type="reset">Borrar información</button>
+		<button type="button" onclick="alert('Formulario para envío de datos por correo electrónico.')">Ayuda</button>
+	</form>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h3>Otros elementos en bloque (se incluyen nuevos elementos definidos en HTML5):</h3>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h4>Elemento de bloque Address (aporta información de contacto):</h4>
+	Puedes contactar a:<br><br>
+	<address>
+		REAL BETIS BALOMPIÉ<br>
+		Avda. de Heliópolis, s/n 41012 Sevilla<br>
+		Tf. +34 955 463 955<br>
+		<a href="mailto:info@realbetisbalompie.es">info@realbetisbalompie.es</a><br>
+		<a href="mailto:comercial@realbetisbalompie.es">comercial@realbetisbalompie.es</a><br>
+	</address>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h4>Elementos de bloque Video (HTML5) junto con Source:</h4>
+	Para incrustar un vídeo en nuestra página web.<br><br>
+	
+	<!--Lo habitual es poner primero el formato preferido por nosotros (por ejemplo: .ogg, el de más calidad, etc.)-->
+	<!--Y después los formatos más estándares (por ejemplo: .mp4)-->
+	<!--También puede especificarse un único formato de vídeo (una única línea source) si se desea-->
+	<!--El vídeo de nuestro ejemplo tiene un formato en 560x320 píxeles (ancho x alto)-->
+	<video controls>	<!--Atributo controls para que aparezca barra con controles de reproducción-->
+		<source src="./medios/videos/juguete.ogv" type="video/ogg">		<!--El navegador intentará reproducir este formato primero-->
+		<source src="./medios/videos/juguete.mp4" type="video/mp4">		<!--El navegador intentará reproducir este formato segundo-->
+		<source src="./medios/videos/juguete.webm" type="video/webm">	<!--El navegador intentará reproducir este formato tercero-->
+		El navegador no soporta el elemento de vídeo HTML5.				<!--Si no puede reproducir ninguno dará este mensaje de aviso-->
+	</video>
+	
+	<!--Otros atributos reseñables que admite: autoplay, loop, muted, poster="imagen_como_portada_del_video.png"-->
+	
+	<!--Veamos un ejemplo donde escalamos el vídeo, le ponemos portada y lo silenciamos por defecto-->
+	<!--El escalado debería ser 420 x 240 si se quiere ajustar perfectamente el vídeo al tamaño de la ventana-->
+	<!--Se puede apreciar que con ancho 300 hay una parte de la ventana "en blanco" donde se incrusta el vídeo-->
+	<video controls width="300" height="240" poster="./medios/videos/juguete_portada_video.png" muted>
+		<source src="./medios/videos/juguete.webm" type="video/webm">
+		<source src="./medios/videos/juguete.ogv" type="video/ogg">		<!--Extensión .ogv, .ogg, según corresponda-->
+		<source src="./medios/videos/juguete.mp4" type="video/mp4">
+		El navegador no soporta el elemento de vídeo HTML5.
+	</video>
+
+	<!--Ancho x alto correctamente ajustado a la ventana donde se incrusta el vídeo-->
+	<video controls width="280" height="160" src="./medios/videos/juguete.mp4">	<!--Forma simplificada si solo tenemos un formato de video-->
+		El navegador no soporta el elemento de vídeo HTML5.
+	</video>
+
+
+	<hr/> <!--Añade una línea o regla horizontal-->	
+	<h4>Elementos de bloque Audio (HTML5) junto con Source:</h4>
+	Para incrustar un audio en nuestra página web.<br><br>
+
+	<!--Los formatos de audio soportados en HTML son MP3 (.mp3), WAV (.wav) y OGG (.ogg, .ogv).-->
+	
+	<audio controls>
+		<source src="./medios/audios/leon.mp3" type="audio/mpeg">
+		<source src="./medios/audios/leon.wav" type="audio/wav">
+		<source src="./medios/audios/leon.ogg" type="audio/ogg">
+		El navegador no soporta el elemento de audio HTML5.
+	</audio>
+	
+	<br>
+
+	<!--Atributos reseñables que admite: autoplay, loop, muted-->
+	
+	<audio controls muted>
+		<source src="./medios/audios/caballo.ogv" type="audio/ogg">
+		El navegador no soporta el elemento de audio HTML5.
+	</audio>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elementos de bloque Track (HTML5):</h4>
+	Se emplea para pistas de texto (subtítulos) en los elementos de bloque Audio y Video.<br>
+	Las pistas (tracks) tienen el formato WebVTT (archivos .vtt).<br>
+	Dependerá del navegador si soporta el subtítulo con track (probarlo con Chrome, Internet Explorer...).<br><br>
+
+	<!--Añadimos tantos elementos track como subtítulos queramos poner; default si activo por defecto alguno-->
+	<video width="530" height="400" controls> 
+		<source src="./medios/videos/Pajarito.mp4" type="video/mp4">
+		<track src="./medios/videos/Pajarito-es.vtt" kind="subtitles" srclang="es" label="Español" default>
+		<track src="./medios/videos/Pajarito-en.vtt" kind="subtitles" srclang="en" label="English">
+	</video>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elementos de bloque Picture (HTML5) junto con Source:</h4>
+	Redimensiona la ventana del navegador para cargar diferentes imágenes (aplicable también para los elementos de bloque Audio y Video).<br><br>
+
+	<picture>
+		<source media="(min-width:800px)" srcset="./medios/imagenes/leonadulto.png">
+		<source media="(min-width:600px)" srcset="./medios/imagenes/leonjoven.jpg">
+		<img src="./medios/imagenes/leonpequeño.png" alt="Leones" style="width:auto;">
+	</picture>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elementos de bloque Figure y Figcaption (HTML5):</h4>
+	El elemento Figure se emplea para marcar una foto en un documento y Figcaption para definir un título para la foto.<br>
+	Se aconseja usar CSS para darle estilo a Figure y Figcaption.<br><br>
+	
+	<figure>
+		<img src="./medios/imagenes/pic_trulli.jpg" alt="Trulli" style="width:100%">
+		<figcaption>Fig.1 - Los Trulli o Trullos de Puglia (Apulia), Italia.</figcaption>
+	</figure>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elementos de bloque Canvas (HTML5):</h4>
+	Se emplea para dibujar gráficos sobre la marcha con secuencias de comandos, normalmente JavaScript.<br>
+	Puede utilizarse para dibujar textos o gráficos animados, ser interactivo y usarse para juegos HTML con JavaScript.
+
+	<h5>Canvas sin modificaciones hechas:</h5>
+	
+	<strong>Horario peninsular</strong><br>
+	<!--Canvas y script originales, sin modificaciones-->
+	<!--script encierra código JavaScript-->
+	<canvas id="canvas" width="400" height="400" style="background-color:#333";>
+	</canvas>
+
+	<script>
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		var radius = canvas.height / 2;
+		ctx.translate(radius, radius);
+		radius = radius * 0.90
+		setInterval(drawClock, 1000);
+
+		function drawClock() {
+			drawFace(ctx, radius);
+			drawNumbers(ctx, radius);
+			drawTime(ctx, radius);
+		}
+
+		function drawFace(ctx, radius) {
+			var grad;
+			ctx.beginPath();
+			ctx.arc(0, 0, radius, 0, 2*Math.PI);
+			ctx.fillStyle = 'white';
+			ctx.fill();
+			grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+			grad.addColorStop(0, '#333');
+			grad.addColorStop(0.5, 'white');
+			grad.addColorStop(1, '#333');
+			ctx.strokeStyle = grad;
+			ctx.lineWidth = radius*0.1;
+			ctx.stroke();
+			ctx.beginPath();
+			ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+			ctx.fillStyle = '#333';
+			ctx.fill();
+		}
+
+		function drawNumbers(ctx, radius) {
+			var ang;
+			var num;
+			ctx.font = radius*0.15 + "px arial";
+			ctx.textBaseline="middle";
+			ctx.textAlign="center";
+			for(num = 1; num < 13; num++){
+				ang = num * Math.PI / 6;
+				ctx.rotate(ang);
+				ctx.translate(0, -radius*0.85);
+				ctx.rotate(-ang);
+				ctx.fillText(num.toString(), 0, 0);
+				ctx.rotate(ang);
+				ctx.translate(0, radius*0.85);
+				ctx.rotate(-ang);
+			}
+		}
+
+		function drawTime(ctx, radius){
+			var now = new Date();
+			var hour = now.getHours();
+			var minute = now.getMinutes();
+			var second = now.getSeconds();
+			//hour
+			hour=hour%12;
+			hour=(hour*Math.PI/6)+
+			(minute*Math.PI/(6*60))+
+			(second*Math.PI/(360*60));
+			drawHand(ctx, hour, radius*0.5, radius*0.07);
+			//minute
+			minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+			drawHand(ctx, minute, radius*0.8, radius*0.07);
+			// second
+			second=(second*Math.PI/30);
+			drawHand(ctx, second, radius*0.9, radius*0.02);
+		}
+
+		function drawHand(ctx, pos, length, width) {
+			ctx.beginPath();
+			ctx.lineWidth = width;
+			ctx.lineCap = "round";
+			ctx.moveTo(0,0);
+			ctx.rotate(pos);
+			ctx.lineTo(0, -length);
+			ctx.stroke();
+			ctx.rotate(-pos);
+		}
+	</script>
+
+	<h5>Canvas con modificaciones hechas:</h5>
+	
+	<div align="center"><strong>Horario canario</strong></div>
+
+	<!--Se ha añadido una etiqueta div para centrar el canvas-->
+	<!--Se podría haber hecho con center y /center pero está obsoleto y se desaconseja su uso-->
+	<!--script encierra código JavaScript-->
+	<div align="center">
+		<canvas id="canvas2id" width="400" height="400" style="background-color:#333";>
+		</canvas>
+	</div>
+
+	<script>
+		var canvas2var = document.getElementById("canvas2id");
+		var ctx2 = canvas2var.getContext("2d");
+		var radius2 = canvas2var.height / 2;
+		ctx2.translate(radius2, radius2);
+		radius2 = radius2 * 0.90
+		setInterval(drawClock2, 1000);
+
+		function drawClock2() {
+			drawFace2(ctx2, radius2);
+			drawNumbers2(ctx2, radius2);
+			drawTime2(ctx2, radius2);
+		}
+
+		function drawFace2(ctx2, radius2) {
+			var grad2;
+			ctx2.beginPath();
+			ctx2.arc(0, 0, radius2, 0, 2*Math.PI);
+			ctx2.fillStyle = 'white';
+			ctx2.fill();
+			grad2 = ctx2.createRadialGradient(0,0,radius2*0.95, 0,0,radius2*1.05);
+			grad2.addColorStop(0, '#333');
+			grad2.addColorStop(0.5, 'white');
+			grad2.addColorStop(1, '#333');
+			ctx2.strokeStyle = grad2;
+			ctx2.lineWidth = radius2*0.1;
+			ctx2.stroke();
+			ctx2.beginPath();
+			ctx2.arc(0, 0, radius2*0.1, 0, 2*Math.PI);
+			ctx2.fillStyle = '#333';
+			ctx2.fill();
+		}
+
+		function drawNumbers2(ctx2, radius2) {
+			var ang2;
+			var num2;
+			ctx2.font = radius2*0.15 + "px arial";
+			ctx2.textBaseline="middle";
+			ctx2.textAlign="center";
+			for(num2 = 1; num2 < 13; num2++){
+				ang2 = num2 * Math.PI / 6;
+				ctx2.rotate(ang2);
+				ctx2.translate(0, -radius2*0.85);
+				ctx2.rotate(-ang2);
+				ctx2.fillText(num2.toString(), 0, 0);
+				ctx2.rotate(ang2);
+				ctx2.translate(0, radius2*0.85);
+				ctx2.rotate(-ang2);
+			}
+		}
+
+		function drawTime2(ctx2, radius2){
+			var now2 = new Date();
+			var hour2 = now2.getHours()-1;
+			var minute2 = now2.getMinutes();
+			var second2 = now2.getSeconds();
+			//hour
+			hour2=hour2%12;
+			hour2=(hour2*Math.PI/6)+
+			(minute2*Math.PI/(6*60))+
+			(second2*Math.PI/(360*60));
+			drawHand2(ctx2, hour2, radius2*0.5, radius2*0.07);
+			//minute
+			minute2=(minute2*Math.PI/30)+(second2*Math.PI/(30*60));
+			drawHand2(ctx2, minute2, radius2*0.8, radius2*0.07);
+			// second
+			second2=(second2*Math.PI/30);
+			drawHand2(ctx2, second2, radius2*0.9, radius2*0.02);
+		}
+
+		function drawHand2(ctx2, pos2, length2, width2) {
+			ctx2.beginPath();
+			ctx2.lineWidth = width2;
+			ctx2.lineCap = "round";
+			ctx2.moveTo(0,0);
+			ctx2.rotate(pos2);
+			ctx2.lineTo(0, -length2);
+			ctx2.stroke();
+			ctx2.rotate(-pos2);
+		}
+	</script>
+
+<h5>Juego HTML con Canvas y JavaScript:</h5>
+	Enlace al juego:
+	<a href="JuegoEsquivar.html" title="Juego HTML con Canvas y JavaScript" target="_blank">
+		Esquivar obstáculos
+    </a>
+	<br><br>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+	
+	<br><strong>Estructura de un documento HTML5:</strong><br>
+	<img src="estructura_pagina_web.png" width="" height="">
+	<img src="Estructura HTML.png" width="600" height="400">
+	<br><br>
+	Veremos a continuación los siguientes elementos de bloque para estructurar un documento HTML:<br><br>
+	<strong>nav, main, article (HTML5), section (HTML5), header (HTML5), aside (HTML5), footer (HTML5).</strong>
+	
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elemento de bloque Nav:</h4>
+	Define un conjunto de enlaces de navegación.<br>
+	Está destinado solo para el bloque principal de enlaces de navegación.<br>
+	Se aconseja usar CSS para darle estilo a Nav.<br><br>
+
+	<nav style="background-color: darkgreen; text-align: center; border: 1px #cccccc solid; padding: 4px; margin: auto; width: 70%;">
+		<a href="html_001.html" target="_blank">Primer ejemplo en HTML</a> |
+		<a href="html_002.html" target="_blank">Segundo ejemplo en HTML</a> |
+		<a href="html_003.html" target="_blank">Tercer ejemplo en HTML</a> |
+		<a href="ejemplo13test.html" target="_blank">Ejemplo 13 del test de evaluación del libro (HTML y CSS)</a>
+	</nav>
+
+	<br><br>
+	Enlace al ejemplo:
+	<a href="ElementoBloqueNav.html" title="Ejemplo de Nav y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Nav
+    </a>
+	<br><br>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elemento de bloque Main:</h4>
+	Especifica el contenido principal de un documento.<br>
+	El contenido dentro del elemento Main debe ser exclusivo del documento. No debe contener ningún contenido que se repita en documentos como barras laterales, enlaces de navegación, información de derechos de autor, logotipos del sitio y formularios de búsqueda.<br>
+	No debe haber más de un elemento Main en un documento. El elemento Main no debe ser descendiente de un elemento Article, Aside, Footer, Header o Nav.
+	Se aconseja usar CSS para darle estilo a Main.<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueMain.html" title="Ejemplo de Main y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Main
+    </a>
+	<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueNavMain.html" title="Ejemplo de Nav, Main y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Nav y Main juntos
+    </a>
+	<br><br>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elemento de bloque Article (HTML5):</h4>
+	Especifica contenido independiente y autónomo.<br>
+	Un artículo debería tener sentido por sí solo y debería ser posible distribuirlo independientemente del resto del sitio.<br>
+	Fuentes potenciales para el elemento Article: Publicación en el foro, Entrada en el blog, Noticia.<br>
+	El elemento Article no se representa como algo especial en un navegador. Sin embargo, puede usar CSS para diseñar el elemento Article.<br>
+	Un elemento Article podría tener un Header con el título, un Footer (fecha de publicación, autor e información adicional) y un cuerpo con el detalle del contenido.<br>
+	Si se trata de un artículo (Article) muy completo, se podría estructurar la información por secciones (Section), cada una con su Header y contenido, por ejemplo.<br>
+	Se pueden tener varios Article dentro de otro elemento Article (subartículos), o bien englobarlos mediante un elemento Section (por ejemplo, para un listado de noticias).<br>
+	Se aconseja usar CSS para darle estilo a Article.<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueArticle.html" title="Ejemplo de Article y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Article (un artículo con tres subartículos dentro)
+    </a>
+	<br><br>
+	
+	Enlace al ejemplo:
+	<a href="ElementoBloqueNavMain.html" title="Ejemplo de Nav, Main, Article y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Nav, Main y Article juntos (es exactamente el mismo ejemplo que Nav y Main juntos)
+    </a>
+	<br><br>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elemento de bloque Section (HTML5):</h4>
+	Define una sección en un documento.<br>
+	Se usa para representar un bloque de nuestra página que tiene valor semántico.<br>
+	Un elemento Section puede contener varios elementos Section (subsecciones).<br>
+	Un elemento Section puede contener varios Article y viceversa.<br>
+	Si tenemos que clasificar por la importancia del significado, el ranking sería:<br>
+	1. Article: sería la etiqueta que contiene la información más relevante.<br>
+	2. Section: la que contiene información menos relevante.<br>
+	3. Div: contiene información que no aporta significado ninguno.<br>
+	Se aconseja usar CSS para darle estilo a Section.<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueSection.html" title="Ejemplo de Section y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Section (un documento con dos secciones)
+    </a>
+	<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueNavArtSect.html" title="Ejemplo de Nav, Main, Article, Section y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Nav, Main, Article y Section juntos
+    </a>
+	<br><br>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elemento de bloque Header (HTML5):</h4>
+	Representa un contenedor de contenido introductorio o un conjunto de enlaces de navegación.<br>
+	Un elemento Header normalmente contiene: uno o más elementos de encabezado (h1-h6), logo o icono de información de autoría.<br>
+	Se puede tener varios elementos Header en un documento HTML (dentro de Body: sería el encabezado de la página en su conjunto; y en Article, Section, Aside o Nav). Sin embargo, Header no se puede colocar dentro de un Footer, Address u otro elemento Header.<br>
+	Se aconseja usar CSS para darle estilo a Header.<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueNavMainArtSectHead.html" title="Ejemplo de Nav, Main, Article, Section, Header y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Nav, Main, Article, Section y Header juntos
+    </a>
+	<br><br>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elemento de bloque Footer (HTML5):</h4>
+	Define un pie de página para un documento o sección.<br>
+	Un elemento Footer normalmente contiene: información de autoría, informacion registrada, información del contacto, mapa del sitio web, enlaces de volver hacia arriba o documentos relacionados.<br>
+	Se puede tener varios elementos Footer en un documento HTML (dentro de Body: sería el pie de la página en su conjunto; y en Article, Section, Aside o Nav, entre otros). Sin embargo, Header no se puede colocar dentro de un Footer, Address u otro elemento Header.<br>
+	Footer no puede ser descendiente de Address, Header o de otro elemento Footer.<br>
+	Consejo: la información de contacto dentro de un elemento Footer debería ir dentro de una etiqueta Address.<br>
+	Se aconseja usar CSS para darle estilo a Footer.<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueNavMainArtSectHeadFoot.html" title="Ejemplo de Nav, Main, Article, Section, Header, Footer y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Nav, Main, Article, Section, Header y Footer juntos
+    </a>
+	<br><br>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+
+	<h4>Elemento de bloque Aside (HTML5):</h4>
+	Define algún contenido a un lado del contenido en el que se coloca.<br>
+	El contenido Aside debe estar relacionado indirectamente con el contenido circundante pero con una importancia menor.<br>
+	Aside no puede ser descendiente de Address.<br>
+	Consejo: El contenido Aside suele colocarse como una barra lateral o como inserciones en un documento, y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o una lista de enlaces a blogs relacionados, etc.<br>
+	El elemento Aside no se representa como algo especial en un navegador. Sin embargo, se puede usar CSS para diseñar el elemento Aside.<br>
+	Se aconseja usar CSS para darle estilo a Aside.<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueAside.html" title="Ejemplo de Aside y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Aside
+    </a>
+	<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueAsideBarraLat.html" title="Ejemplo de Aside con empleo de display table y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Aside con empleo de display table
+    </a>
+	<br><br>
+
+	Enlace al ejemplo:
+	<a href="ElementoBloqueNavMainArtSectHeadFootAsi.html" title="Ejemplo de Nav, Main, Article, Section, Header, Footer, Aside y estilo con CSS" target="_blank">
+		Ejemplo de elemento de bloque Nav, Main, Article, Section, Header, Footer y Aside juntos
+    </a>
+	<br><br>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h1>Hojas de estilo CSS (3 modos: en línea, interno o externo) (ver cómo añadir imagen o color de fondo a la página):</h1>
+	Cómo añadir menú desplegable e imagen de fondo animada (bien con gif animado o con fragmento de vídeo...).
+	
+	<br><br>
+	Ejemplo de cómo diferentes hojas de estilo CSS pueden cambiar la disposición de una página web (secciones realizadas con elementos div):
+	<a href="EstilosWebCSS.html" title="Ejemplo de CSS" target="_blank">
+		Ejemplo de CSS
+	</a>
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h1>JavaScript:</h1>
+
+	<hr/> <!--Añade una línea o regla horizontal-->
+	<h1>Eventos en HTML (definición en HTML, programación en JavaScript):</h1>
+	
+	<hr/> <!--Añade una línea o regla horizontal-->
+	
+  </body>
+</html>

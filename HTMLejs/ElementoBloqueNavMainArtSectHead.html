@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*Conforme se avanza dentro de CSS, se van heredando los estilos que correspondan a los mismos elementos*/
+nav {
+  background-color: darkgreen;
+  text-align: center;
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+  width: 67%;
+  color: white;
+}
+
+/*Para seleccionar todos los elementos "a" dentro del elemento nav*/
+nav a {
+  color: pink;
+  padding: 10px;
+  text-decoration: none; /*para quitar el subrayado de los hiperenlaces*/
+}
+
+main {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+/*Para seleccionar los elementos h1, p y .articlehtml que son hijos de main*/
+main > h1, p, .articlehtml {
+  margin: 10px;
+  padding: 5px;
+  background-color: green;
+}
+
+/*Para seleccionar el primer elemento p que va inmediatamente después de h1*/
+h1 + p {
+  margin: 20px;
+  background: skyblue;
+  color: gold;
+}
+
+/*Definimos el estilo para la clase articlehtml*/
+.articlehtml {
+  background: white;
+}
+
+.articlehtml > h3, p {
+  margin: 4px;
+  font-size: 90%;
+  color: red;
+}
+p > a{
+  color: skyblue;
+}
+
+/*Definimos el estilo para la clase sectionhtml*/
+.sectionhtml {
+  background: black;
+  padding-bottom: 1px;
+}
+
+.sectionhtml > h2, p {
+  margin: 4px;
+  color: white;
+}
+
+.sectionhtml > h2 {
+  font-size: 130%;
+}
+
+/*Definimos el estilo para la clase headerprincipal*/
+.headerprincipal {
+  background: darkred;
+  padding-bottom: 1px;
+}
+
+.headerprincipal > h1 {
+  margin: 4px;
+  color: white;
+}
+
+.headerprincipal > h1 {
+  font-size: 280%;
+  font-family: Algerian;
+}
+
+.headerprincipal > p {
+  font-family: Algerian;
+  background: black;
+}
+
+</style>
+</head>
+<body>
+
+<header class="headerprincipal">
+  <h1>Diseño de una página web</h1>
+  <p>Los elementos Nav, Main, Article, Section y Header - Estilo con CSS</p>
+</header>
+
+<nav>
+	<a href="html_001.html" target="_blank">Primer ejemplo en HTML</a> |
+	<a href="html_002.html" target="_blank">Segundo ejemplo en HTML</a> |
+	<a href="html_003.html" target="_blank">Tercer ejemplo en HTML</a> |
+	<a href="ejemplo13test.html" target="_blank">Ejemplo 13 del test de evaluación del libro (HTML y CSS)</a>
+</nav>
+
+<main>
+  <h1>Aprendiendo HTML y CSS</h1>
+  <p>Estudiaremos HTML y CSS con sencillos ejemplos.</p>
+  
+  <section class="sectionhtml">
+    <h2>Sección 1. Colección de ejemplos de HTML y CSS</h2>
+    <p>Se presenta una lista en forma de artículos con enlaces a los ejemplos de HTML y CSS.</p>
+	
+    <article class="articlehtml">
+      <h3>Artículo 1. Primer ejemplo</h3>
+      <p>Este ejemplo contiene los primeros pasos en HTML.</p>
+	  <p>Enlace al ejemplo: <a href="html_001.html" target="_blank">Primer ejemplo en HTML</a></p>
+    </article>
+	
+    <article class="articlehtml">
+      <h3>Artículo 2. Segundo ejemplo</h3>
+      <p>En este segundo ejemplo vemos etiquetas básicas para crear imágenes o hipervínculos.</p>
+	  <p>Enlace al ejemplo: <a href="html_002.html" target="_blank">Segundo ejemplo en HTML</a></p>
+    </article>
+	
+    <article class="articlehtml">
+      <h3>Artículo 3. Tercer ejemplo</h3>
+      <p>Profundizaremos en los conceptos de HTML y CSS, tocando un poco de JavaScript.</p>
+	  <p>Enlace al ejemplo: <a href="html_003.html" target="_blank">Tercer ejemplo en HTML</a></p>
+    </article>
+
+  </section>
+ 
+  <section class="sectionhtml">
+    <h2>Sección 2. Páginas de interés sobre HTML y CSS</h2>
+    <p>Se presenta una lista en forma de artículos con enlaces a las páginas de interés sobre HTML y CSS.</p>
+
+   <article class="articlehtml">
+      <h3>Artículo 1. W3Schools</h3>
+      <p>W3Schools es un sitio web para aprender tecnologías web en línea. Contiene tutoriales de HTML, CSS, JavaScript, SQL, PHP, XML y otras tecnologías.</p>
+	  <p>Enlace al sitio web: <a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+    </article>
+	
+    <article class="articlehtml">
+      <h3>Artículo 2. MDN Web Docs</h3>
+      <p>Web oficial de Mozilla para la documentación de estándares web y proyectos de Mozilla. Aprende desarrollo web (HTML, CSS, JavaScript, etc.).</p>
+	  <p>Enlace al área de aprendizaje web de MDN: <a href="https://developer.mozilla.org/es/docs/Learn" target="_blank">Tutoriales de MDN</a></p>
+    </article>
+
+  </section>
+
+</main>
+</body>
+</html>

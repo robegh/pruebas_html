@@ -1,0 +1,1 @@
+Datos enviados para su procesamiento en PHP (Hipertext Pre-Processor, lenguaje de programación de backend o servidor).

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav {
+  background-color: darkgreen;
+  text-align: center;
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+  width: 67%;
+  color: white;
+}
+
+/*Para seleccionar todos los elementos "a" dentro del elemento nav*/
+nav a {
+  color: pink;
+  padding: 10px;
+  text-decoration: none; /*para quitar el subrayado de los hiperenlaces*/
+}
+
+main {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+/*Para seleccionar los elementos h1, p y .articlehtml que son hijos de main*/
+main > h1, p, .articlehtml {
+  margin: 10px;
+  padding: 5px;
+  background-color: green;
+}
+
+/*Para seleccionar el primer elemento p que va inmediatamente después de h1*/
+h1 + p {
+  margin: 20px;
+  background: skyblue;
+  color: gold;
+}
+
+/*Definimos el estilo para la clase articlehtml*/
+.articlehtml {
+  background: white;
+}
+
+.articlehtml > h2, p {
+  margin: 4px;
+  font-size: 90%;
+  color: red;
+}
+p > a{
+  color: skyblue;
+}
+</style>
+</head>
+<body>
+
+<h1>Los elementos Nav, Main y Article - Estilo con CSS</h1>
+
+<nav>
+	<a href="html_001.html" target="_blank">Primer ejemplo en HTML</a> |
+	<a href="html_002.html" target="_blank">Segundo ejemplo en HTML</a> |
+	<a href="html_003.html" target="_blank">Tercer ejemplo en HTML</a> |
+	<a href="ejemplo13test.html" target="_blank">Ejemplo 13 del test de evaluación del libro (HTML y CSS)</a>
+</nav>
+
+<main>
+  <h1>Aprendiendo HTML y CSS</h1>
+  <p>Estudiaremos HTML y CSS con sencillos ejemplos.</p>
+  <article class="articlehtml">
+    <h2>Artículo 1. Primer ejemplo</h2>
+    <p>Este ejemplo contiene los primeros pasos en HTML.</p>
+	<p>Enlace al ejemplo: <a href="html_001.html" target="_blank">Primer ejemplo en HTML</a></p>
+  </article>
+  <article class="articlehtml">
+    <h2>Artículo 2. Segundo ejemplo</h2>
+    <p>En este segundo ejemplo vemos etiquetas básicas para crear imágenes o hipervínculos.</p>
+	<p>Enlace al ejemplo: <a href="html_002.html" target="_blank">Segundo ejemplo en HTML</a></p>
+  </article>
+  <article class="articlehtml">
+    <h2>Artículo 3. Tercer ejemplo</h2>
+    <p>Profundizaremos en los conceptos de HTML y CSS, tocando un poco de JavaScript.</p>
+	<p>Enlace al ejemplo: <a href="html_003.html" target="_blank">Tercer ejemplo en HTML</a></p>
+  </article>
+</main>
+</body>
+</html>
